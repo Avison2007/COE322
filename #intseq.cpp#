@@ -1,0 +1,21 @@
+#include <iostream>
+
+int main() {
+    // Loop through numbers from 1 to 1000
+    for (int i = 1; i <= 1000; ++i) {
+        std::cout << "Original: " << i;
+
+        // Check if the number is even using the modulo operator
+        if (i % 2 == 0) {
+            int result = i / 2;
+            std::cout << " -> Even (divided by 2) -> Result: " << result << "\n";
+        } 
+        // Otherwise, the number is odd
+        else {
+            int result = i + 1;
+            std::cout << " -> Odd (added 1) -> Result: " << result << "\n";
+        }
+    }
+
+    return 0;
+}
