@@ -8,7 +8,6 @@ int main() {
         long long n = start;
         long long length = 1;
 
-        // Generate the Collatz sequence until reaching 1
         while (n != 1) {
             if (n % 2 == 0) {
                 n = n / 2;
@@ -19,10 +18,11 @@ int main() {
             length++;
         }
 
-        // If this is the longest sequence so far
         if (length > longest) {
             longest = length;
-            cout << start << endl;
+
+            cout << "Starting number: " << start
+                 << "  Number of terms: " << length << endl;
         }
     }
 
